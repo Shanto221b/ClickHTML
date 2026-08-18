@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Details</title>
+</head>
+<body>
+<h2>Customer Delivery Details</h2>
+<p><b>Order ID:</b> 1001</p>
+<p><b>Pickup Address:</b> Mirpur 10, Dhaka</p>
+<p><b>Delivery Address:</b> Dhanmondi 27, Dhaka</p>
+<p><b>Receiver Name:</b> Rahim Ahmed</p>
+<p><b>Receiver Phone:</b> 01900000000</p>
+<p><b>Product Details:</b> Documents and small package</p>
+<p><b>Current Status:</b> Waiting for Pickup</p>
+<form action="customer_details.html" method="GET">
+<input type="hidden" name="order_id" value="">
+<button type="submit" name="status" value="Picked Up">Pick Order</button>
+<br><br>
+<button type="submit" name="status" value="Delivery Successful">Complete Delivery</button>
+</form>
+<br><br>
+<center><a class="back-btn" href="assigned_orders.html">Back To Orders</a></center>
+</body>
+</html>
