@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Book Pickup Order</title>
+    <title>Book Pickup Order</title>
 </head>
+
 <body>
+
 <h2>Book Pickup Order</h2>
+
 <form action="my_orders.html" method="GET">
-<label>Pickup Address:</label><br>
-<textarea name="pickup_address" required>Mirpur 10, Dhaka</textarea>
-<br><br>
-<label>Delivery Address:</label><br>
-<textarea name="delivery_address" required>Dhanmondi 27, Dhaka</textarea>
-<br><br>
-<label>Receiver Name:</label><br>
-<input type="text" name="receiver_name" value="Rahim Ahmed" required>
-<br><br>
-<label>Receiver Phone:</label><br>
-<input type="text" name="receiver_phone" value="01900000000" required>
-<br><br>
-<label>Product Details:</label><br>
-<textarea name="product_details" required>Documents and small package</textarea>
-<br><br>
-<input type="submit" value="Book Order">
+
+    <table>
+
+        <tr>
+            <td><label for="pickup_address">Pickup Address:</label></td>
+            <td>
+                <textarea id="pickup_address" name="pickup_address" required>Mirpur 10, Dhaka</textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="delivery_address">Delivery Address:</label></td>
+            <td>
+                <textarea id="delivery_address" name="delivery_address" required>Dhanmondi 27, Dhaka</textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="receiver_name">Receiver Name:</label></td>
+            <td>
+                <input type="text" id="receiver_name" name="receiver_name"
+                       value="Rahim Ahmed" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="receiver_phone">Receiver Phone:</label></td>
+            <td>
+                <input type="text" id="receiver_phone" name="receiver_phone"
+                       value="01900000000" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="product_details">Product Details:</label></td>
+            <td>
+                <textarea id="product_details" name="product_details" required>Documents and small package</textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Action:</td>
+            <td>
+                <input type="submit" value="Book Order">
+            </td>
+        </tr>
+
+    </table>
+
 </form>
+
 <br><br>
-<center><a class="back-btn" href="dashboard.html">Back To Dashboard</a></center>
+
+<center>
+    <a class="back-btn" href="dashboard.html">Back To Dashboard</a>
+</center>
+
 </body>
 </html>

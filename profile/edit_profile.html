@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Edit Profile</title>
+    <title>Edit Profile</title>
 </head>
+
 <body>
+
 <h2>Edit Profile</h2>
+
 <form action="view_profile.html" method="GET">
-<input type="hidden" name="id" value="">
-<label>Name:</label>
-<input type="text" name="name" value="Shanto Debnath">
-<label>Email:</label>
-<input type="email" value="shanto@example.com" readonly>
-<label>Phone:</label>
-<input type="text" name="phone" value="01700000000">
-<input type="submit" value="Update Profile">
+
+    <input type="hidden" name="id" value="">
+
+    <table>
+        <tr>
+            <th><label for="name">Name:</label></th>
+            <td>
+                <input type="text" id="name" name="name" value="Shanto Debnath">
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="email">Email:</label></th>
+            <td>
+                <input type="email" id="email" name="email"
+                       value="shanto@example.com" readonly>
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="phone">Phone:</label></th>
+            <td>
+                <input type="text" id="phone" name="phone"
+                       value="01700000000">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Update Profile">
+            </td>
+        </tr>
+    </table>
+
 </form>
+
 <br>
-<center><a class="back-btn" href="view_profile.html">Back To Profile</a></center>
+
+<center>
+    <a class="back-btn" href="view_profile.html">Back To Profile</a>
+</center>
+
 </body>
 </html>
